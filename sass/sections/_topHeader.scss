@@ -1,0 +1,30 @@
+@use "../util" as *;
+
+// Top Header
+@include layout(mobile) {
+  // header container
+  .dashboard-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  // header above the hr
+  .top-header {
+    // @include outline;
+    font-size: 27px;
+    color: $dark-white-text;
+    font-weight: $font-weight-norm;
+    margin: 20px 0 5px 0;
+  }
+  .header-stats {
+    color: $dark-card-text;
+    font-size: $font-size;
+    font-weight: $font-weight-norm;
+  }
+  .header-hr {
+    width: 300px;
+    border-bottom: 1px solid $lt-gray-blue-text;
+    margin-top: 15px;
+  }
+}

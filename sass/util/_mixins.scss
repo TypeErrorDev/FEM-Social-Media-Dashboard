@@ -1,0 +1,45 @@
+@use "variables" as *;
+
+@mixin outline {
+  outline: 1px solid red;
+}
+
+// Base mixin
+@mixin baseStyle() {
+  padding: 0;
+  margin: 0 10px 0 10px;
+  @include interFont;
+  background-color: $dark-theme-dark-blue-top-bg;
+}
+
+//Font Family
+@mixin interFont {
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+@mixin layout($breakpoint) {
+  // $breakpoint is simply a variable that can have several values as the argument
+  @if $breakpoint==mobile {
+    @media only screen and (min-width: 375px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tablet {
+    // if the argument == tablet, then it'll run the code below
+
+    @media only screen and (min-width: 768px) {
+      //regular CSS media query declaration
+
+      @content;
+      //resource for @content: https://sass-lang.com/documentation/at-rules/mixin#content-blocks
+    }
+  }
+
+  @if $breakpoint==desktop {
+    @media only screen and (min-width: 1440px) {
+      @content;
+    }
+  }
+}
