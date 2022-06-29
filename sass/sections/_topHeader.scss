@@ -15,7 +15,8 @@
     font-size: 27px;
     color: $dark-white-text;
     font-weight: $font-weight-norm;
-    margin: 20px 0 5px 0;
+    width: 100%;
+    margin-top: 20px;
   }
   .header-stats {
     color: $dark-card-text;
@@ -24,7 +25,8 @@
   }
   .header-hr {
     width: 300px;
-    border-bottom: 1px solid $lt-gray-blue-text;
+    border: 1px solid lighten($lt-gray-blue-text, 1);
     margin-top: 15px;
+    margin-bottom: 100px;
   }
 }

@@ -18,7 +18,8 @@
     font-size: 27px;
     color: hsl(0deg, 0%, 100%);
     font-weight: 400;
-    margin: 20px 0 5px 0;
+    width: 100%;
+    margin-top: 20px;
   }
   .header-stats {
     color: hsl(228deg, 34%, 66%);
@@ -27,8 +28,9 @@
   }
   .header-hr {
     width: 300px;
-    border-bottom: 1px solid hsl(228deg, 12%, 44%);
+    border: 1px solid #656a81;
     margin-top: 15px;
+    margin-bottom: 100px;
   }
 }
 
