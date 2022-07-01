@@ -1,1 +1,68 @@
 @use "../util" as *;
+.top-card-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.top-cards {
+  position: relative;
+  background-color: $dark-card-bg;
+  //   border: 1px solid red;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+
+  &:nth-child(1):before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: $facebook;
+    top: 0;
+    left: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  &:nth-child(2):before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: $twitter;
+    top: 0;
+    left: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  &:nth-child(3):before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: $instagram;
+    top: 0;
+    left: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  &:nth-child(4):before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: $youtube;
+    top: 0;
+    left: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}
+.top-name {
+  color: $dark-card-text;
+  background-color: transparent;
+  margin-top: 20px;
+  font-weight: $font-weight-bold;
+}
